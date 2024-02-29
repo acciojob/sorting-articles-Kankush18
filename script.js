@@ -11,7 +11,7 @@
         const sortedBands = bands.sort((a, b) => stripArticle(a) > stripArticle(b) ? 1 : -1);
 
         
-        const bandList = document.getElementById('band');
+        const bandList = document.getElementById('bands');
         sortedBands.forEach(band => {
             const listItem = document.createElement('li');
             listItem.textContent = band;
